@@ -5,10 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebRTC Demo</title>
+    <link rel="stylesheet" href="css/main.css" />
+
 </head>
 <body>
     <h1>RealTime WebRTC Demo</h1>
-    <video autoplay playsinline></video>
+    <video id="localVideo" autoplay playsinline></video>
+<video id="remoteVideo" autoplay playsinline></video>
+
+<div>
+    <button id="startButton">Start</button>
+    <button id="callButton">Call</button>
+    <button id="hangupButton">Hang Up</button>
+  </div>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 </html>
